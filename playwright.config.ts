@@ -13,14 +13,17 @@ export default defineConfig({
     baseURL: 'https://opensource-demo.orangehrmlive.com',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    video: 'off',
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'chrome',
+      use: { 
+        ...devices['Desktop Chrome'],
+        channel: 'chrome',
+      },
     },
 
    /* {
