@@ -40,7 +40,6 @@ El proyecto usa POM para separar la lógica de los tests de la interacción con 
 
 ```bash
 npm install
-npx playwright install chromium
 ```
 
 ## Ejecutar los tests
